@@ -28,7 +28,7 @@ def getByCompanieName(companyName: str) -> str:
     """
     key = f"business:name:{companyName}"
     key2 = json.loads(redisConnection.get(key))["id"]
-    return redisConnection.get(f"business:{key2}")
+    return json.loads(redisConnection.get(f"business:{key2}"))
 
 redisConnection = redis.Redis(host='localhost', port=6379, decode_responses=True)
 

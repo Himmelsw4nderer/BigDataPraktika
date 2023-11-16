@@ -1,16 +1,14 @@
 [tool.poetry]
-name = "redispraktika"
+name = "bigdatapraktika"
 version = "0.1.0"
 description = ""
-authors = ["nbax <nils@nbax.de>"]
+authors = ["Nils Baxheinrich <nils.baxheinrich@gmx.de>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-redis = "^5.0.1"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-shfkdspofbososdfnonpdoosbosu

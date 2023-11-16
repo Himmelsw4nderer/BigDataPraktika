@@ -16,15 +16,12 @@ def putBusinesstoRedis(jsonObject: dict):
     redisConnection.set(nameKey, namePayload)
 
 
-
 redisConnection = redis.Redis(host='localhost', port=6379, decode_responses=True)
 
-file = open("businessLarge.json", "r")
+file = open("RedisPraktika/businessS.json", "r")
 lines = file.readlines()
 for line in lines:
     jsonobject = json.loads(line)
-    #putBusinesstoRedis(jsonobject)
-    #print(redisConnection.get(nameKey))
-    #print(redisConnection.get(idKey))
+    putBusinesstoRedis(jsonobject)
 
 
